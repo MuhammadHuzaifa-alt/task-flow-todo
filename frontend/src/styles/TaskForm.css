@@ -1,0 +1,546 @@
+/* =========================================================
+   TASK FORM WRAPPER
+   ========================================================= */
+
+.task-form-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 28px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+
+  box-shadow:
+    0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+
+/* =========================================================
+   FORM HEADER
+   ========================================================= */
+
+.task-form-header {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 28px;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.task-form-header > div:first-child {
+  min-width: 0;
+}
+
+.form-eyebrow {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #2563eb;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+}
+
+.task-form-header h2 {
+  margin: 0 0 7px;
+
+  color: #111827;
+
+  font-size: 23px;
+
+  line-height: 1.25;
+
+  font-weight: 700;
+}
+
+.task-form-header p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+   ========================================================= */
+
+.form-close-button {
+  width: 36px;
+  height: 36px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #6b7280;
+
+  font-size: 24px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.form-close-button:hover {
+  background: #f9fafb;
+
+  border-color: #d1d5db;
+
+  color: #111827;
+
+  transform: rotate(3deg);
+}
+
+.form-close-button:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.15);
+
+  outline-offset: 2px;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.task-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+
+/* =========================================================
+   FORM GROUP
+   ========================================================= */
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  min-width: 0;
+}
+
+.form-group label {
+  color: #374151;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   INPUT / TEXTAREA / SELECT
+   ========================================================= */
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+
+/* =========================================================
+   TEXT INPUT
+   ========================================================= */
+
+.form-group input {
+  height: 46px;
+
+  padding: 0 13px;
+}
+
+
+/* =========================================================
+   TEXTAREA
+   ========================================================= */
+
+.form-group textarea {
+  min-height: 120px;
+
+  padding: 12px 13px;
+
+  resize: vertical;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   SELECT
+   ========================================================= */
+
+.form-group select {
+  height: 46px;
+
+  padding: 0 12px;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   PLACEHOLDER
+   ========================================================= */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9ca3af;
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.form-group input:hover,
+.form-group textarea:hover,
+.form-group select:hover {
+  border-color: #9ca3af;
+}
+
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================================================
+   FORM ROW
+   ========================================================= */
+
+.form-row {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+
+/* =========================================================
+   DATE INPUT
+   ========================================================= */
+
+.form-group input[type="date"] {
+  color: #374151;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   FORM ACTIONS
+   ========================================================= */
+
+.form-actions {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 12px;
+
+  margin-top: 8px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+
+/* =========================================================
+   CANCEL BUTTON
+   ========================================================= */
+
+.form-cancel-button {
+  min-width: 105px;
+
+  height: 44px;
+
+  padding: 0 18px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  color: #374151;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.form-cancel-button:hover {
+  background: #f9fafb;
+
+  border-color: #9ca3af;
+
+  color: #111827;
+}
+
+.form-cancel-button:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.15);
+
+  outline-offset: 2px;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+   ========================================================= */
+
+.form-submit-button {
+  min-width: 135px;
+
+  height: 44px;
+
+  padding: 0 20px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-submit-button:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 7px 16px rgba(37, 99, 235, 0.22);
+}
+
+.form-submit-button:active {
+  transform: translateY(0);
+}
+
+.form-submit-button:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.2);
+
+  outline-offset: 2px;
+}
+
+
+/* =========================================================
+   REQUIRED / INVALID STATES
+   ========================================================= */
+
+.form-group input:invalid:not(:placeholder-shown) {
+  border-color: #d1d5db;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .task-form-wrapper {
+    padding: 22px;
+  }
+
+  .task-form-header {
+    margin-bottom: 23px;
+  }
+
+  .task-form-header h2 {
+    font-size: 21px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 500px) {
+  .task-form-wrapper {
+    padding: 18px;
+
+    border-radius: 12px;
+  }
+
+  .task-form-header {
+    gap: 12px;
+
+    margin-bottom: 20px;
+
+    padding-bottom: 17px;
+  }
+
+  .form-eyebrow {
+    font-size: 10px;
+  }
+
+  .task-form-header h2 {
+    font-size: 19px;
+  }
+
+  .task-form-header p {
+    font-size: 12px;
+  }
+
+  .form-close-button {
+    width: 33px;
+    height: 33px;
+
+    font-size: 21px;
+  }
+
+  .task-form {
+    gap: 17px;
+  }
+
+  .form-group input,
+  .form-group select {
+    height: 44px;
+  }
+
+  .form-group textarea {
+    min-height: 105px;
+  }
+
+  .form-actions {
+    align-items: stretch;
+
+    flex-direction: column-reverse;
+
+    gap: 10px;
+
+    padding-top: 17px;
+  }
+
+  .form-cancel-button,
+  .form-submit-button {
+    width: 100%;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 360px) {
+  .task-form-wrapper {
+    padding: 15px;
+  }
+
+  .task-form-header h2 {
+    font-size: 18px;
+  }
+
+  .task-form-header p {
+    font-size: 11px;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 13px;
+  }
+}
